@@ -1,0 +1,9 @@
+{
+  "name": "domz",
+  "version": "1.0.0",
+  "description": "a proxy function to help build virtual DOM trees from functions",
+  "main": "index.js",
+  "keywords": ["proxy", "virtual dom", "createElement", "JSX", "h"],
+  "author": "@lukejacksonn",
+  "license": "MIT"
+}
