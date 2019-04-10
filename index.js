@@ -9,7 +9,7 @@ export default h => {
     {},
     {
       get: (target, name) => cache[name] || (cache[name] = (...args) =>
-        typeof args[0] === "object" && !Array.isArray(args[0]) && !isVnode(args[0])
+        args[0] && typeof args[0] === "object" && !Array.isArray(args[0]) && !isVnode(args[0])
           ? h(name, ...args)
           : h(name, {}, ...args))
     }
